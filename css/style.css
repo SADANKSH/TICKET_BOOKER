@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    background-color: #8b5e3c;
+    background-color: rgb(233, 144, 43);
     color: #fff;
     padding: 10px 20px;
     text-align: center;
@@ -43,7 +43,7 @@ input[type="date"] {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #8b5e3c;
+    border: 1px solid rgb(233, 144, 43);
     border-radius: 5px;
     box-sizing: border-box;
 }
@@ -51,7 +51,7 @@ input[type="date"] {
 input[type="button"] {
     width: 100%;
     padding: 10px;
-    background-color: #8b5e3c;
+    background-color: rgb(233, 144, 43);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -73,7 +73,7 @@ input[type="button"]:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #8b5e3c;
+    background-color: rgb(233, 144, 43);
     color: #fff;
     position: relative;
     bottom: 0;
