@@ -1,4 +1,4 @@
-/* General Reset */
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body {
     color: #4b2e2e;
 }
 
-/* Header */
+
 header {
     background-color: rgb(233, 144, 43);
     color: #fff;
@@ -20,7 +20,20 @@ header {
     font-weight: bold;
 }
 
-/* Main Content */
+ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 20px; 
+    background-color:rgb(233, 144, 43); ;
+    color: white;
+}
+
+ul li {
+    display: inline; /* Ensure items stay in a line */
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -78,4 +91,8 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.butt{
+    size:100;
 }
