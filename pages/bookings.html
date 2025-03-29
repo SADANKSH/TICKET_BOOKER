@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bookings - GOZibiboGo</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/bookings.css">
 </head>
+
 <body>
     <header>
         <div class="nav">
@@ -23,7 +26,7 @@
             </ul>
         </div>
     </header>
-    
+
     <main>
         <div class="page-banner">
             <div class="container">
@@ -31,7 +34,7 @@
                 <p>View and manage your train bookings</p>
             </div>
         </div>
-        
+
         <div class="container">
             <div class="bookings-container">
                 <div class="bookings-filter">
@@ -41,13 +44,13 @@
                         <button class="filter-btn" data-filter="completed">Completed</button>
                         <button class="filter-btn" data-filter="cancelled">Cancelled</button>
                     </div>
-                    
+
                     <div class="search-booking">
                         <input type="text" id="search-pnr" placeholder="Search by PNR">
                         <button class="search-btn"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-                
+
                 <div class="bookings-list">
                     <!-- Upcoming Booking -->
                     <div class="booking-card upcoming">
@@ -55,7 +58,7 @@
                             <span class="status-badge upcoming">Upcoming</span>
                             <span class="booking-date">Booked on: 15 Mar, 2023</span>
                         </div>
-                        
+
                         <div class="booking-details">
                             <div class="train-info">
                                 <h3>Rajdhani Express (12952)</h3>
@@ -78,7 +81,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="booking-info">
                                 <div class="info-item">
                                     <span class="label">PNR:</span>
@@ -98,21 +101,21 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="booking-actions">
                             <button class="view-btn">View Details</button>
                             <button class="cancel-btn">Cancel Ticket</button>
                             <button class="download-btn">Download E-Ticket</button>
                         </div>
                     </div>
-                    
+
                     <!-- Completed Booking -->
                     <div class="booking-card completed">
                         <div class="booking-status">
                             <span class="status-badge completed">Completed</span>
                             <span class="booking-date">Booked on: 10 Jan, 2023</span>
                         </div>
-                        
+
                         <div class="booking-details">
                             <div class="train-info">
                                 <h3>August Kranti Rajdhani (12953)</h3>
@@ -135,7 +138,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="booking-info">
                                 <div class="info-item">
                                     <span class="label">PNR:</span>
@@ -155,21 +158,21 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="booking-actions">
                             <button class="view-btn">View Details</button>
                             <button class="download-btn">Download E-Ticket</button>
                             <button class="review-btn">Write Review</button>
                         </div>
                     </div>
-                    
+
                     <!-- Cancelled Booking -->
                     <div class="booking-card cancelled">
                         <div class="booking-status">
                             <span class="status-badge cancelled">Cancelled</span>
                             <span class="booking-date">Booked on: 05 Feb, 2023</span>
                         </div>
-                        
+
                         <div class="booking-details">
                             <div class="train-info">
                                 <h3>Duronto Express (12260)</h3>
@@ -192,7 +195,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="booking-info">
                                 <div class="info-item">
                                     <span class="label">PNR:</span>
@@ -212,7 +215,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="booking-actions">
                             <button class="view-btn">View Details</button>
                             <button class="download-btn">Download Cancellation</button>
@@ -220,7 +223,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="pagination">
                     <button class="pagination-btn active">1</button>
                     <button class="pagination-btn">2</button>
@@ -232,7 +235,7 @@
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -258,7 +261,8 @@
             &copy; 2023 GOZibiboGo. All Rights Reserved
         </div>
     </footer>
-    
+
     <script src="../js/bookings.js"></script>
 </body>
-</html> 
+
+</html>

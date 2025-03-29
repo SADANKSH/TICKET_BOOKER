@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="nav">
@@ -23,7 +25,7 @@
             </ul>
         </div>
     </header>
-    
+
     <main>
         <div class="booking-progress">
             <div class="progress-step completed">
@@ -46,12 +48,12 @@
                 <div class="step-label">Confirmation</div>
             </div>
         </div>
-        
+
         <div class="container">
             <div class="payment-container">
                 <div class="payment-options">
                     <h2>Select Payment Method</h2>
-                    
+
                     <div class="payment-tabs">
                         <div class="tab-header">
                             <div class="tab-item active" data-tab="credit-card">
@@ -67,46 +69,50 @@
                                 <i class="fas fa-wallet"></i> Wallet
                             </div>
                         </div>
-                        
+
                         <div class="tab-content">
                             <!-- Credit Card Tab -->
                             <div class="tab-pane active" id="credit-card">
                                 <form id="card-payment-form">
                                     <div class="form-group">
                                         <label for="card-name">Name on Card</label>
-                                        <input type="text" id="card-name" name="card-name" placeholder="Enter name as on card" required>
+                                        <input type="text" id="card-name" name="card-name"
+                                            placeholder="Enter name as on card" required>
                                     </div>
-                                    
+
                                     <div class="form-group">
                                         <label for="card-number">Card Number</label>
                                         <div class="input-with-icon">
                                             <i class="fas fa-credit-card"></i>
-                                            <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+                                            <input type="text" id="card-number" name="card-number"
+                                                placeholder="XXXX XXXX XXXX XXXX" required>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-row">
                                         <div class="form-group">
                                             <label for="expiry-date">Expiry Date</label>
-                                            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                                            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY"
+                                                required>
                                         </div>
-                                        
+
                                         <div class="form-group">
                                             <label for="cvv">CVV</label>
                                             <div class="input-with-icon">
                                                 <i class="fas fa-lock"></i>
-                                                <input type="password" id="cvv" name="cvv" placeholder="XXX" maxlength="3" required>
+                                                <input type="password" id="cvv" name="cvv" placeholder="XXX"
+                                                    maxlength="3" required>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="save-card">
                                         <input type="checkbox" id="save-card">
                                         <label for="save-card">Save this card for future payments</label>
                                     </div>
                                 </form>
                             </div>
-                            
+
                             <!-- Net Banking Tab -->
                             <div class="tab-pane" id="net-banking">
                                 <div class="bank-list">
@@ -129,7 +135,7 @@
                                             <label for="axis">Axis Bank</label>
                                         </div>
                                     </div>
-                                    
+
                                     <h3>Other Banks</h3>
                                     <div class="bank-select">
                                         <select id="other-banks">
@@ -142,7 +148,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- UPI Tab -->
                             <div class="tab-pane" id="upi">
                                 <div class="upi-payment">
@@ -153,9 +159,9 @@
                                             <input type="text" id="upi-id" name="upi-id" placeholder="yourname@upi">
                                         </div>
                                     </div>
-                                    
+
                                     <p class="upi-note">Or pay using QR code</p>
-                                    
+
                                     <div class="upi-apps">
                                         <div class="upi-app">
                                             <img src="https://via.placeholder.com/50" alt="Google Pay">
@@ -176,7 +182,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Wallet Tab -->
                             <div class="tab-pane" id="wallet">
                                 <div class="wallet-options">
@@ -213,10 +219,10 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="order-summary">
                     <h2>Order Summary</h2>
-                    
+
                     <div class="journey-summary">
                         <div class="summary-item">
                             <span>Train</span>
@@ -239,7 +245,7 @@
                             <span>AC 3 Tier (3A)</span>
                         </div>
                     </div>
-                    
+
                     <div class="fare-summary">
                         <div class="fare-row">
                             <span>Base Fare</span>
@@ -262,7 +268,7 @@
                             <span>₹2,714</span>
                         </div>
                     </div>
-                    
+
                     <div class="payment-action">
                         <button id="pay-now-btn" class="pay-btn">Pay ₹2,714</button>
                     </div>
@@ -270,7 +276,7 @@
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -296,7 +302,8 @@
             &copy; 2023 GOZibiboGo. All Rights Reserved
         </div>
     </footer>
-    
+
     <script src="../js/payment.js"></script>
 </body>
-</html> 
+
+</html>

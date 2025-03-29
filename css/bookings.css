@@ -1,0 +1,406 @@
+/* Bookings Page Styles */
+/* This CSS builds upon the main style.css file with styles specific to the bookings page */
+
+.bookings-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.bookings-header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.bookings-header h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.bookings-header p {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.bookings-filter {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-btn {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: rgb(233, 144, 43);
+    color: white;
+    border-color: rgb(233, 144, 43);
+}
+
+.search-booking {
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+}
+
+.search-booking input {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.search-booking i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.booking-card {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.booking-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.booking-id {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.booking-status {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.status-confirmed {
+    background-color: #e6f7ee;
+    color: #0d8a4c;
+}
+
+.status-pending {
+    background-color: #fff8e6;
+    color: #b88100;
+}
+
+.status-cancelled {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.booking-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.journey-info {
+    flex: 2;
+}
+
+.journey-route {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.station {
+    text-align: center;
+}
+
+.station-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.station-code {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 2px;
+}
+
+.journey-line {
+    flex: 1;
+    height: 2px;
+    background-color: rgb(233, 144, 43);
+    margin: 0 15px;
+    position: relative;
+}
+
+.journey-line:before,
+.journey-line:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(233, 144, 43);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.journey-line:before {
+    left: -4px;
+}
+
+.journey-line:after {
+    right: -4px;
+}
+
+.journey-time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.train-info {
+    flex: 1;
+    text-align: right;
+}
+
+.train-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.train-number {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.journey-date {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.passenger-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.passenger-count {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.passenger-count i {
+    color: rgb(233, 144, 43);
+}
+
+.ticket-price {
+    font-weight: bold;
+    color: #333;
+}
+
+.booking-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.print-btn {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.print-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.view-btn {
+    background-color: rgb(233, 144, 43);
+    color: white;
+}
+
+.view-btn:hover {
+    background-color: #5e3f27;
+}
+
+.cancel-btn {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.cancel-btn:hover {
+    background-color: #ffcdd2;
+}
+
+.empty-bookings {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.empty-bookings i {
+    font-size: 3rem;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.empty-bookings h3 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.empty-bookings p {
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.find-trains-btn {
+    display: inline-block;
+    background-color: rgb(233, 144, 43);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.find-trains-btn:hover {
+    background-color: #5e3f27;
+    transform: translateY(-2px);
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 5px;
+}
+
+.pagination-item {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f5f5f5;
+}
+
+.pagination-item.active {
+    background-color: rgb(233, 144, 43);
+    color: white;
+}
+
+.pagination-item:hover:not(.active) {
+    background-color: #e0e0e0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .bookings-filter {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .search-booking {
+        max-width: 100%;
+    }
+
+    .booking-details {
+        flex-direction: column;
+    }
+
+    .train-info {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .passenger-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .booking-actions {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

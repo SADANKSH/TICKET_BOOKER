@@ -14,20 +14,22 @@ body {
 }
 
 ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; 
-    gap: 20px; 
-    background-color:rgb(233, 144, 43); ;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(233, 144, 43);
+    ;
     color: white;
 }
 
 ul li {
-    display: inline; /* Ensure items stay in a line */
+    display: inline;
+    /* Ensure items stay in a line */
 }
 
-.nav{ 
+.nav {
     font-size: 24px;
     font-weight: bold;
 }
@@ -39,7 +41,7 @@ main div {
     margin-left: 400px;
 }
 
-.Juku{
+.Juku {
     margin-top: 100px;
 }
 
@@ -69,7 +71,7 @@ button:hover {
     background-color: #5e3f27;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }

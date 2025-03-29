@@ -29,11 +29,11 @@ header {
 }
 
 ul {
-    list-style: none; 
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; 
-    gap: 20px; 
+    display: flex;
+    gap: 20px;
     background-color: rgb(233, 144, 43);
     color: white;
     justify-content: center;
@@ -134,7 +134,7 @@ input[type="button"]:hover,
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/train-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/train-hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -160,7 +160,7 @@ input[type="button"]:hover,
     background-color: white;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 800px;
     margin: -50px auto 30px;
@@ -224,7 +224,7 @@ input[type="button"]:hover,
 .route-card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 300px;
     display: flex;
@@ -235,7 +235,7 @@ input[type="button"]:hover,
 
 .route-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .route-info h3 {
@@ -306,8 +306,13 @@ footer {
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideInDown {
@@ -315,6 +320,7 @@ footer {
         transform: translateY(-30px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -326,6 +332,7 @@ footer {
         transform: translateY(30px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -336,9 +343,11 @@ footer {
     0% {
         box-shadow: 0 0 0 0 rgba(233, 144, 43, 0.7);
     }
+
     70% {
         box-shadow: 0 0 0 10px rgba(233, 144, 43, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(233, 144, 43, 0);
     }
@@ -350,15 +359,15 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .search-row {
         flex-direction: column;
     }
-    
+
     .swap-btn {
         margin: 10px auto;
     }
-    
+
     .footer-content {
         flex-direction: column;
         text-align: left;
@@ -378,7 +387,7 @@ footer {
     left: 50%;
     width: 0;
     height: 0;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     transform: translate(-50%, -50%);
     transition: width 0.6s ease, height 0.6s ease;
@@ -552,17 +561,17 @@ a:hover {
     .auth-container {
         padding: 10px;
     }
-    
+
     .auth-card {
         padding: 20px;
     }
-    
+
     .form-options {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-    
+
     .input-with-icon input {
         width: 100%;
     }

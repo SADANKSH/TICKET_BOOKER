@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Your Ticket - GOZibiboGo</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/bookings.css">
 </head>
+
 <body>
     <header>
         <div class="nav">
@@ -23,7 +26,7 @@
             </ul>
         </div>
     </header>
-    
+
     <main>
         <div class="booking-progress">
             <div class="progress-step active">
@@ -46,17 +49,17 @@
                 <div class="step-label">Confirmation</div>
             </div>
         </div>
-        
+
         <div class="container">
             <div class="booking-summary">
                 <h2>Journey Details</h2>
-                
+
                 <div class="journey-card">
                     <div class="train-info">
                         <h3>Rajdhani Express (12952)</h3>
                         <span class="train-type superfast">Superfast</span>
                     </div>
-                    
+
                     <div class="journey-details">
                         <div class="journey-stations">
                             <div class="station">
@@ -76,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="seat-selection">
                     <h3>Selected Accommodation</h3>
                     <div class="selected-class">
@@ -91,25 +94,26 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="booking-form">
                 <h2>Passenger Details</h2>
                 <form id="passenger-form">
                     <div class="passenger-container" id="passenger-1">
                         <h3>Passenger 1</h3>
-                        
+
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name-1">Full Name</label>
                                 <input type="text" id="name-1" name="name-1" placeholder="Enter full name" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="age-1">Age</label>
-                                <input type="number" id="age-1" name="age-1" min="1" max="120" placeholder="Age" required>
+                                <input type="number" id="age-1" name="age-1" min="1" max="120" placeholder="Age"
+                                    required>
                             </div>
                         </div>
-                        
+
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="gender-1">Gender</label>
@@ -120,7 +124,7 @@
                                     <option value="other">Other</option>
                                 </select>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="berth-1">Berth Preference</label>
                                 <select id="berth-1" name="berth-1">
@@ -133,7 +137,7 @@
                                 </select>
                             </div>
                         </div>
-                        
+
                         <div class="form-row">
                             <div class="form-group full-width">
                                 <label for="id-proof-1">ID Proof</label>
@@ -146,42 +150,45 @@
                                 </select>
                             </div>
                         </div>
-                        
+
                         <div class="form-row">
                             <div class="form-group full-width">
                                 <label for="id-number-1">ID Number</label>
-                                <input type="text" id="id-number-1" name="id-number-1" placeholder="Enter ID number" required>
+                                <input type="text" id="id-number-1" name="id-number-1" placeholder="Enter ID number"
+                                    required>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="add-passenger">
                         <button type="button" id="add-passenger-btn">+ Add Passenger</button>
                     </div>
-                    
+
                     <div class="contact-details">
                         <h3>Contact Details</h3>
-                        
+
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="contact-email">Email</label>
-                                <input type="email" id="contact-email" name="contact-email" placeholder="Enter email address" required>
+                                <input type="email" id="contact-email" name="contact-email"
+                                    placeholder="Enter email address" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="contact-phone">Phone Number</label>
-                                <input type="tel" id="contact-phone" name="contact-phone" placeholder="Enter phone number" required>
+                                <input type="tel" id="contact-phone" name="contact-phone"
+                                    placeholder="Enter phone number" required>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="booking-actions">
                         <button type="button" class="back-btn">Back to Trains</button>
                         <button type="submit" class="continue-btn">Continue to Payment</button>
                     </div>
                 </form>
             </div>
-            
+
             <div class="fare-summary">
                 <h3>Fare Summary</h3>
                 <div class="fare-details">
@@ -209,7 +216,7 @@
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -235,7 +242,8 @@
             &copy; 2023 GOZibiboGo. All Rights Reserved
         </div>
     </footer>
-    
+
     <script src="../js/booking.js"></script>
 </body>
-</html> 
+
+</html>
