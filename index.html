@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOZibiboGo-Book Your Tickets</title>
+    <title>GOZibiboGo - Book Your Tickets</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -15,34 +14,124 @@
         <div class="nav">
             <div class="logo">GOZibiboGo</div>
         </div>
-
+        <div class="menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/about.html">About Us</a></li>
+                <li><a href="pages/contact.html">Contact us</a></li>
+                <li><a href="pages/bookings.html">My Bookings</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="pages/signup.html">Sign Up</a></li>
+            </ul>
+        </div>
     </header>
-    <div class="li">
-        <ul>
-            <a href="index.html"><li>Home</li></a>
-            <li>About Us</li>
-            <li>Contact us</li>
-            <a href="Login.html"><li>Login</li></a>
-        </ul>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Book Your Train Tickets</h1>
+            <p>Travel smart, book with GOZibiboGo</p>
+        </div>
     </div>
+
     <main>
-        <div class="searchbar">
-            <input type="text" placeholder="Enter Your Start">
+        <div class="search-container">
+            <h2>Search Trains</h2>
+            <form id="search-form">
+                <div class="search-row">
+                    <div class="input-group">
+                        <label for="source">From</label>
+                        <input type="text" id="source" placeholder="Enter Your Start Location">
+                    </div>
+                    
+                    <div class="swap-btn">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="destination">To</label>
+                        <input type="text" id="destination" placeholder="Enter Your Destination">
+                    </div>
+                </div>
+                
+                <div class="search-row">
+                    <div class="input-group">
+                        <label for="journey-date">Journey Date</label>
+                        <input type="date" id="journey-date">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="passengers">Passengers</label>
+                        <select id="passengers">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="search-row">
+                    <button type="submit" class="search-btn">Find Trains</button>
+                </div>
+            </form>
         </div>
-            <i class="fa-regular fa-arrows-up-down"></i>
-        <div>
-            <input type="text" placeholder="Enter Your Destination">
+        
+        <div class="popular-routes">
+            <h2>Popular Routes</h2>
+            <div class="routes-container">
+                <div class="route-card">
+                    <div class="route-info">
+                        <h3>Mumbai to Delhi</h3>
+                        <p>Starting from ₹1,200</p>
+                    </div>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+                <div class="route-card">
+                    <div class="route-info">
+                        <h3>Delhi to Jaipur</h3>
+                        <p>Starting from ₹800</p>
+                    </div>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+                <div class="route-card">
+                    <div class="route-info">
+                        <h3>Chennai to Bangalore</h3>
+                        <p>Starting from ₹600</p>
+                    </div>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+            </div>
         </div>
-        <div class="date">
-            <p>Enter Your Journey Date</p>
-            <input type="date">
-        </div>
-        <div><input type="button" value="Find Trains"></div>
     </main>
+
     <footer>
-        Copyright &copy; All Rights Reserved
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GOZibiboGo</h3>
+                <p>Your trusted partner for hassle-free train bookings.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About Us</a></li>
+                    <li><a href="pages/contact.html">Contact Us</a></li>
+                    <li><a href="pages/faq.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                <p><i class="fas fa-envelope"></i> support@gozibibogo.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 GOZibiboGo. All Rights Reserved
+        </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>

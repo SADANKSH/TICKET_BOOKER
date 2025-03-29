@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation - GOZibiboGo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">GOZibiboGo</div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+                <li><a href="../Login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <div class="booking-progress">
+            <div class="progress-step completed">
+                <div class="step-number">1</div>
+                <div class="step-label">Review Journey</div>
+            </div>
+            <div class="progress-line completed"></div>
+            <div class="progress-step completed">
+                <div class="step-number">2</div>
+                <div class="step-label">Passenger Details</div>
+            </div>
+            <div class="progress-line completed"></div>
+            <div class="progress-step completed">
+                <div class="step-number">3</div>
+                <div class="step-label">Payment</div>
+            </div>
+            <div class="progress-line completed"></div>
+            <div class="progress-step active">
+                <div class="step-number">4</div>
+                <div class="step-label">Confirmation</div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="confirmation-container">
+                <div class="confirmation-header">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h1>Booking Confirmed!</h1>
+                    <p>Your ticket has been booked successfully</p>
+                    <div class="booking-id">
+                        <p>Booking ID: <span>GZBG78952364</span></p>
+                        <p>PNR: <span>6538291047</span></p>
+                    </div>
+                </div>
+                
+                <div class="ticket">
+                    <div class="ticket-header">
+                        <div class="logo-section">GOZibiboGo</div>
+                        <div class="ticket-title">E-Ticket</div>
+                    </div>
+                    
+                    <div class="ticket-content">
+                        <div class="train-details">
+                            <h3>Train Details</h3>
+                            <div class="detail-item">
+                                <span class="label">Train Name:</span>
+                                <span class="value">Rajdhani Express</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Train Number:</span>
+                                <span class="value">12952</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Class:</span>
+                                <span class="value">AC 3 Tier (3A)</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">From:</span>
+                                <span class="value">Mumbai Central (BCT)</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">To:</span>
+                                <span class="value">New Delhi (NDLS)</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Date of Journey:</span>
+                                <span class="value">29 Mar, 2023</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Departure:</span>
+                                <span class="value">16:25</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Arrival:</span>
+                                <span class="value">08:00 (30 Mar, 2023)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="passenger-details">
+                            <h3>Passenger Details</h3>
+                            <table class="passenger-table">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Name</th>
+                                        <th>Age</th>
+                                        <th>Gender</th>
+                                        <th>Seat</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>John Doe</td>
+                                        <td>32</td>
+                                        <td>Male</td>
+                                        <td>B4-23, Lower</td>
+                                        <td>Confirmed</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="fare-details">
+                            <h3>Fare Details</h3>
+                            <div class="detail-item">
+                                <span class="label">Base Fare:</span>
+                                <span class="value">₹2,500</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Reservation Charges:</span>
+                                <span class="value">₹40</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Superfast Charges:</span>
+                                <span class="value">₹45</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">GST (5%):</span>
+                                <span class="value">₹129</span>
+                            </div>
+                            <div class="detail-item total">
+                                <span class="label">Total Amount:</span>
+                                <span class="value">₹2,714</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="important-instructions">
+                        <h3>Important Instructions</h3>
+                        <ul>
+                            <li>Please carry original identity proof (Aadhar Card/PAN Card/Passport) during the journey.</li>
+                            <li>E-ticket is valid only with an ID proof in original. If found traveling without ID proof, passenger will be treated as without ticket and charged as per extant Railway Rules.</li>
+                            <li>Arrive at the station at least 30 minutes before the departure time.</li>
+                            <li>For any assistance, contact our customer care at 1800-123-4567.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="ticket-actions">
+                    <button class="download-btn"><i class="fas fa-download"></i> Download Ticket</button>
+                    <button class="email-btn"><i class="fas fa-envelope"></i> Email Ticket</button>
+                    <button class="print-btn"><i class="fas fa-print"></i> Print Ticket</button>
+                </div>
+                
+                <div class="more-actions">
+                    <a href="../index.html" class="home-link">Return to Home</a>
+                    <a href="bookings.html" class="view-bookings-link">View My Bookings</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GOZibiboGo</h3>
+                <p>Your trusted partner for hassle-free train bookings.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                <p><i class="fas fa-envelope"></i> support@gozibibogo.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 GOZibiboGo. All Rights Reserved
+        </div>
+    </footer>
+    
+    <script src="../js/confirmation.js"></script>
+</body>
+</html> 

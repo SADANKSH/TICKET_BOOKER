@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - GOZibiboGo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">GOZibiboGo</div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+                <li><a href="../Login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <div class="booking-progress">
+            <div class="progress-step completed">
+                <div class="step-number">1</div>
+                <div class="step-label">Review Journey</div>
+            </div>
+            <div class="progress-line completed"></div>
+            <div class="progress-step completed">
+                <div class="step-number">2</div>
+                <div class="step-label">Passenger Details</div>
+            </div>
+            <div class="progress-line completed"></div>
+            <div class="progress-step active">
+                <div class="step-number">3</div>
+                <div class="step-label">Payment</div>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-step">
+                <div class="step-number">4</div>
+                <div class="step-label">Confirmation</div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="payment-container">
+                <div class="payment-options">
+                    <h2>Select Payment Method</h2>
+                    
+                    <div class="payment-tabs">
+                        <div class="tab-header">
+                            <div class="tab-item active" data-tab="credit-card">
+                                <i class="fas fa-credit-card"></i> Credit/Debit Card
+                            </div>
+                            <div class="tab-item" data-tab="net-banking">
+                                <i class="fas fa-university"></i> Net Banking
+                            </div>
+                            <div class="tab-item" data-tab="upi">
+                                <i class="fas fa-money-bill-wave"></i> UPI
+                            </div>
+                            <div class="tab-item" data-tab="wallet">
+                                <i class="fas fa-wallet"></i> Wallet
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <!-- Credit Card Tab -->
+                            <div class="tab-pane active" id="credit-card">
+                                <form id="card-payment-form">
+                                    <div class="form-group">
+                                        <label for="card-name">Name on Card</label>
+                                        <input type="text" id="card-name" name="card-name" placeholder="Enter name as on card" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="card-number">Card Number</label>
+                                        <div class="input-with-icon">
+                                            <i class="fas fa-credit-card"></i>
+                                            <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="expiry-date">Expiry Date</label>
+                                            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="cvv">CVV</label>
+                                            <div class="input-with-icon">
+                                                <i class="fas fa-lock"></i>
+                                                <input type="password" id="cvv" name="cvv" placeholder="XXX" maxlength="3" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="save-card">
+                                        <input type="checkbox" id="save-card">
+                                        <label for="save-card">Save this card for future payments</label>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <!-- Net Banking Tab -->
+                            <div class="tab-pane" id="net-banking">
+                                <div class="bank-list">
+                                    <h3>Popular Banks</h3>
+                                    <div class="popular-banks">
+                                        <div class="bank-option">
+                                            <input type="radio" id="sbi" name="bank" value="sbi">
+                                            <label for="sbi">State Bank of India</label>
+                                        </div>
+                                        <div class="bank-option">
+                                            <input type="radio" id="hdfc" name="bank" value="hdfc">
+                                            <label for="hdfc">HDFC Bank</label>
+                                        </div>
+                                        <div class="bank-option">
+                                            <input type="radio" id="icici" name="bank" value="icici">
+                                            <label for="icici">ICICI Bank</label>
+                                        </div>
+                                        <div class="bank-option">
+                                            <input type="radio" id="axis" name="bank" value="axis">
+                                            <label for="axis">Axis Bank</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <h3>Other Banks</h3>
+                                    <div class="bank-select">
+                                        <select id="other-banks">
+                                            <option value="">Select Bank</option>
+                                            <option value="kotak">Kotak Mahindra Bank</option>
+                                            <option value="yes">Yes Bank</option>
+                                            <option value="idfc">IDFC First Bank</option>
+                                            <option value="pnb">Punjab National Bank</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- UPI Tab -->
+                            <div class="tab-pane" id="upi">
+                                <div class="upi-payment">
+                                    <div class="form-group">
+                                        <label for="upi-id">UPI ID</label>
+                                        <div class="input-with-icon">
+                                            <i class="fas fa-at"></i>
+                                            <input type="text" id="upi-id" name="upi-id" placeholder="yourname@upi">
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="upi-note">Or pay using QR code</p>
+                                    
+                                    <div class="upi-apps">
+                                        <div class="upi-app">
+                                            <img src="https://via.placeholder.com/50" alt="Google Pay">
+                                            <span>Google Pay</span>
+                                        </div>
+                                        <div class="upi-app">
+                                            <img src="https://via.placeholder.com/50" alt="PhonePe">
+                                            <span>PhonePe</span>
+                                        </div>
+                                        <div class="upi-app">
+                                            <img src="https://via.placeholder.com/50" alt="Paytm">
+                                            <span>Paytm</span>
+                                        </div>
+                                        <div class="upi-app">
+                                            <img src="https://via.placeholder.com/50" alt="Amazon Pay">
+                                            <span>Amazon Pay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Wallet Tab -->
+                            <div class="tab-pane" id="wallet">
+                                <div class="wallet-options">
+                                    <div class="wallet-option">
+                                        <input type="radio" id="paytm-wallet" name="wallet" value="paytm">
+                                        <label for="paytm-wallet">
+                                            <img src="https://via.placeholder.com/50" alt="Paytm Wallet">
+                                            <span>Paytm</span>
+                                        </label>
+                                    </div>
+                                    <div class="wallet-option">
+                                        <input type="radio" id="phonepe-wallet" name="wallet" value="phonepe">
+                                        <label for="phonepe-wallet">
+                                            <img src="https://via.placeholder.com/50" alt="PhonePe Wallet">
+                                            <span>PhonePe</span>
+                                        </label>
+                                    </div>
+                                    <div class="wallet-option">
+                                        <input type="radio" id="amazon-wallet" name="wallet" value="amazon">
+                                        <label for="amazon-wallet">
+                                            <img src="https://via.placeholder.com/50" alt="Amazon Pay">
+                                            <span>Amazon Pay</span>
+                                        </label>
+                                    </div>
+                                    <div class="wallet-option">
+                                        <input type="radio" id="mobikwik-wallet" name="wallet" value="mobikwik">
+                                        <label for="mobikwik-wallet">
+                                            <img src="https://via.placeholder.com/50" alt="MobiKwik">
+                                            <span>MobiKwik</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    
+                    <div class="journey-summary">
+                        <div class="summary-item">
+                            <span>Train</span>
+                            <span>Rajdhani Express (12952)</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Journey</span>
+                            <span>Mumbai Central → New Delhi</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Date</span>
+                            <span>29 Mar, 2023</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Passengers</span>
+                            <span>1</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Class</span>
+                            <span>AC 3 Tier (3A)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="fare-summary">
+                        <div class="fare-row">
+                            <span>Base Fare</span>
+                            <span>₹2,500</span>
+                        </div>
+                        <div class="fare-row">
+                            <span>Reservation Charges</span>
+                            <span>₹40</span>
+                        </div>
+                        <div class="fare-row">
+                            <span>Superfast Charges</span>
+                            <span>₹45</span>
+                        </div>
+                        <div class="fare-row">
+                            <span>GST (5%)</span>
+                            <span>₹129</span>
+                        </div>
+                        <div class="fare-row total">
+                            <span>Total Amount</span>
+                            <span>₹2,714</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-action">
+                        <button id="pay-now-btn" class="pay-btn">Pay ₹2,714</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GOZibiboGo</h3>
+                <p>Your trusted partner for hassle-free train bookings.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                <p><i class="fas fa-envelope"></i> support@gozibibogo.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 GOZibiboGo. All Rights Reserved
+        </div>
+    </footer>
+    
+    <script src="../js/payment.js"></script>
+</body>
+</html> 
